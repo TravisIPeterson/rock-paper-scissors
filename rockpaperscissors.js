@@ -46,3 +46,11 @@ function playRound(playerSelection, computerSelection) {
         return "You extra broke it."
     }
 }
+
+function game() {
+    for (let i = 0; i < 5; i++) {
+        let playerSelection = prompt("Pick rock, paper, or scissors.");
+        let computerSelection = getComputerChoice();
+        alert(playRound(playerSelection, computerSelection));
+    }
+}
